@@ -47,103 +47,103 @@ router.delete("/:id", (req, res, next) => {
 })
 
 
-router.get("/category/housing", (req, res) => {
+// router.get("/category/housing", (req, res) => {
 
-    Expense.find({ category: 'housing' }).then(expense => {
-        if (expense) {
-            res.status(200).json(expense);
-        }
-        else {
-            res.status(404).json({ message: "Expense not found" })
-        }
-    })
-})
+//     Expense.find({ category: 'housing' }).then(expense => {
+//         if (expense) {
+//             res.status(200).json(expense);
+//         }
+//         else {
+//             res.status(404).json({ message: "Expense not found" })
+//         }
+//     })
+// })
 
-router.get("/category/transportation", (req, res) => {
+// router.get("/category/transportation", (req, res) => {
 
-    Expense.find({ category: 'transportation' }).then(expense => {
-        if (expense) {
-            res.status(200).json(expense);
-        }
-        else {
-            res.status(404).json({ message: "Expense not found" })
-        }
-    })
-})
-
-
-router.get("/category/food", (req, res) => {
-
-    Expense.find({ category: 'food' }).then(expense => {
-        if (expense) {
-            res.status(200).json(expense);
-        }
-        else {
-            res.status(404).json({ message: "Expense not found" })
-        }
-    })
-})
-
-router.get("/category/medical", (req, res) => {
-
-    Expense.find({ category: 'medical' }).then(expense => {
-        if (expense) {
-            res.status(200).json(expense);
-        }
-        else {
-            res.status(404).json({ message: "Expense not found" })
-        }
-    })
-})
+//     Expense.find({ category: 'transportation' }).then(expense => {
+//         if (expense) {
+//             res.status(200).json(expense);
+//         }
+//         else {
+//             res.status(404).json({ message: "Expense not found" })
+//         }
+//     })
+// })
 
 
-router.get("/category/entertainment", (req, res) => {
+// router.get("/category/food", (req, res) => {
 
-    Expense.find({ category: 'entertainment' }).then(expense => {
-        if (expense) {
-            res.status(200).json(expense);
-        }
-        else {
-            res.status(404).json({ message: "Expense not found" })
-        }
-    })
-})
+//     Expense.find({ category: 'food' }).then(expense => {
+//         if (expense) {
+//             res.status(200).json(expense);
+//         }
+//         else {
+//             res.status(404).json({ message: "Expense not found" })
+//         }
+//     })
+// })
 
-router.get("/category/travel", (req, res) => {
+// router.get("/category/medical", (req, res) => {
 
-    Expense.find({ category: 'travel' }).then(expense => {
-        if (expense) {
-            res.status(200).json(expense);
-        }
-        else {
-            res.status(404).json({ message: "Expense not found" })
-        }
-    })
-})
+//     Expense.find({ category: 'medical' }).then(expense => {
+//         if (expense) {
+//             res.status(200).json(expense);
+//         }
+//         else {
+//             res.status(404).json({ message: "Expense not found" })
+//         }
+//     })
+// })
 
-router.get("/category/clothing", (req, res) => {
 
-    Expense.find({ category: 'clothing' }).then(expense => {
-        if (expense) {
-            res.status(200).json(expense);
-        }
-        else {
-            res.status(404).json({ message: "Expense not found" })
-        }
-    })
-})
+// router.get("/category/entertainment", (req, res) => {
 
-router.get("/category/others", (req, res) => {
+//     Expense.find({ category: 'entertainment' }).then(expense => {
+//         if (expense) {
+//             res.status(200).json(expense);
+//         }
+//         else {
+//             res.status(404).json({ message: "Expense not found" })
+//         }
+//     })
+// })
 
-    Expense.find({ category: 'others' }).then(expense => {
-        if (expense) {
-            res.status(200).json(expense);
-        }
-        else {
-            res.status(404).json({ message: "Expense not found" })
-        }
-    })
-})
+// router.get("/category/travel", (req, res) => {
+
+//     Expense.find({ category: 'travel' }).then(expense => {
+//         if (expense) {
+//             res.status(200).json(expense);
+//         }
+//         else {
+//             res.status(404).json({ message: "Expense not found" })
+//         }
+//     })
+// })
+
+// router.get("/category/clothing", (req, res) => {
+
+//     Expense.find({ category: 'clothing' }).then(expense => {
+//         if (expense) {
+//             res.status(200).json(expense);
+//         }
+//         else {
+//             res.status(404).json({ message: "Expense not found" })
+//         }
+//     })
+// })
+
+// router.get("/category/others", (req, res) => {
+
+//     Expense.find({ category: 'others' }).then(expense => {
+//         if (expense) {
+//             res.status(200).json(expense);
+//         }
+//         else {
+//             res.status(404).json({ message: "Expense not found" })
+//         }
+//     })
+// })
 
 
 router.post('/add-expense', async (req, res) => {
